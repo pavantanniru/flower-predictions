@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask</title>
+  </head>
+  <body>
+
+    <h1>please enter your flower mesaurments below</h1>
+    <form  method="POST">
+
+      <!-- CSRF security Key .. -->
+      {{form.hidden_tag()}}
+
+      {{ form.sep_len.label }} {{ form.sep_len }}
+       {{ form.sep_wid.label }} {{ form.sep_wid }}
+       {{ form.ped_len.label }} {{ form.ped_len }}
+
+       {{form.ped_wid.label }} {{ form.ped_wid }}
+
+       {{form.submit}}
+
+
+    </form>
+
+  </body>
+</html>
